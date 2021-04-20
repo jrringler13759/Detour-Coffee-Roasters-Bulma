@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Detour Coffee Roasters</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
     <link rel = "stylesheet" href = "style.css">
+    <!-- <script src = "script.js"></script> -->
+
+  
     <script src="https://kit.fontawesome.com/288aa916af.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<!--alert banner-->
   <section>
     <div class = "alertBanner">
         <p class = "m-4">FREE SHIPPING on all orders across Canada over $35! All Subscriptions Ship FREE!</p>
     </div>
   </section>
+<!--brand banner with search and cart-->
 <header class = "mainWrapper mt-6">
-  <section class = "level block container ">
+  <section class = "level block container">
       <div class = "level-left">
         <div class = "level-item">
           <form>
@@ -30,13 +36,12 @@
     
       <div class = "level-item">
         <a href="https://detourcoffee.com">
-          <img src="Assets/detourBrand.png" width="200" height="150">
+          <img src="Assets/detourBrand.png" width="200">
         </a>
       </div>
     
     <div class = "level-right">
       <div class = "level-item">
-
         <a>
           <span class="icon">
             <i class="fas fa-shopping-bag"></i>
@@ -44,10 +49,8 @@
           <span>Items</span>
         </a>
       </div>
-
-        
+       
       <div class = "level-item">
-
         <div class="select">
           <select>
             <option>USD</option>
@@ -58,17 +61,15 @@
   </div>     
   </section>  
 
-
-
-
+<!--Nav bar dropdowns-->
 <nav class="navbar container is-max-desktop" role="navigation" aria-label="main navigation">
-    
-  <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+  <div class = "navbar-brand"> 
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
     </a>
-
+  </div> 
     <div id="navbarBasicExample" class=" level navbar-menu">
      
         <div class="level-item navbar-item has-dropdown is-hoverable">
@@ -143,15 +144,82 @@
         </div>
       
     </div>
-</nav>
-  
+</nav> 
 </header>
 
-<section class="section">
-    <div class="container">
+<!-- hero carousel -->
+<section id = "hero" class="hero is-large has-carousel 	">
+  <div class = "hero-body">
+    <div id="heroCarousel" class="hero-carousel">
+      <div class="item-1">
+        <img src="https://picsum.photos/200/300?random=1">
+      </div>
+      <div class="item-2">
+        <img src="https://picsum.photos/200/300?random=2">
+      </div>
+      <div class="item-3">
+        <img src="https://picsum.photos/200/300?random=3">
+      </div>
+      <div class="item-4">
+        <img src="https://picsum.photos/200/300?random=4">
+      </div>
+      <div class="item-5">
+        <img src="https://picsum.photos/200/300?random=5">
+      </div>
+      <div class="item-6">
+        <img src="https://picsum.photos/200/300?random=6">
+      </div>
+      <div class="item-7">
+        <img src="https://picsum.photos/200/300?random=7">
+      </div>
+      <div class="item-8">
+        <img src="https://picsum.photos/200/300?random=8">
+      </div>
+      <div class="item-9">
+        <img src="https://picsum.photos/200/300?random=9">
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<section class = "section container">
+  <div id = "sub-and-learn" class = "columns is-mobile">
+    <div class = "column is-half">
+      <img src="https://picsum.photos/700?random=10">
+      <p class = "is-overlay ">SUBSCRIPTIONS</p>
+    </div>
+    <div class = "column is-half">
+      <img src="https://picsum.photos/700?random=11">
+    </div>
+  </div>
+</section>
+
+<!-- <div class="container">
+  <div class="columns">
+    <div class="column is-6">
 
     </div>
-</section>
+    <div class="column is-6">
+
+    </div>
+
+
+  </div>
+</div> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+  
+  <script>
+		bulmaCarousel.attach('#heroCarousel', {
+			slidesToScroll: 1,
+			slidesToShow: 4,
+      autoplay: true,
+      loop: true,
+      infinite: true
+		});
+		</script>
+    
     
 </body>
 </html>

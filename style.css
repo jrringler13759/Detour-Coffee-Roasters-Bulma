@@ -9,3 +9,11 @@
     width: 100%;
     font-size: 13px;
 }
+
+.is-overlay{ 
+    bottom: 0; 
+    left: 0; 
+    position: absolute; 
+    right: 0; 
+    top: 0;
+}
