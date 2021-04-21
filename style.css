@@ -10,11 +10,26 @@
     font-size: 13px;
 }
 
-.is-overlay{ 
-    color: red;
-    bottom: 0; 
-    left: 0; 
-    position: absolute; 
-    right: 0; 
-    top: 0;
+#links { 
+    color: white;
+    font-size: 36px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    left: 50%;  
+    bottom: 50%;
+    text-align: center;
+    
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    border: none !important;
+    box-shadow: none !important;
+
+}
+
+.title {
+    color: rgb(65, 64, 64);
+    font-size: 14px;
 }
