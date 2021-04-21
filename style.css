@@ -11,6 +11,7 @@
 }
 
 .is-overlay{ 
+    color: red;
     bottom: 0; 
     left: 0; 
     position: absolute; 
