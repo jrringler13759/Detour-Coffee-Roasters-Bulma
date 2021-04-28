@@ -2,6 +2,7 @@ html, body {
     margin: 0 !important;
     padding: 0 !important;
 }
+
 .alertBanner {
     background-color: rgb(43, 42, 42);
     text-align: center;
@@ -27,7 +28,7 @@ html, body {
 }
 
 #links { 
-    color: red;
+    color: white;
     font-size: 36px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: relative;
@@ -57,3 +58,9 @@ html, body {
 select.select {
     padding: 7px 11px 7px 11px !important;
 }
+
+.list-item {
+    margin: 20px 0 20px 0;
+    font-size: 12px;
+}
+
