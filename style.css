@@ -15,6 +15,17 @@ html, body {
     margin-top: 0 !important;
 }
 
+.card {
+    border: none !important;
+    box-shadow: none !important;
+
+}
+
+.title {
+    color: rgb(65, 64, 64);
+    
+}
+
 #links { 
     color: red;
     font-size: 36px;
@@ -28,13 +39,21 @@ html, body {
     transform: translate(-50%, -50%);
 }
 
-.card {
-    border: none !important;
-    box-shadow: none !important;
-
+#searchInput {
+    border: none;
 }
 
-.title {
-    color: rgb(65, 64, 64);
-    
+#items {
+    color: black
+}
+
+#shoppingBag {
+    color: black !important;
+}
+
+.select:not(.is-multiple):not(.is-loading)::after {
+    display: none;
+}
+select.select {
+    padding: 7px 11px 7px 11px !important;
 }
